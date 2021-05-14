@@ -14,4 +14,44 @@ body {
   box-sizing: border-box;
   font-size: 1.6rem;
   font-family: Arial, Helvetica, sans-serif;
+  background-image: url(/images/background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.keys {
+  width: 65%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.key {
+  width: 10rem;
+  height: 10rem;
+  padding: 1rem 1.5rem;
+  border: 0.4rem solid black;
+  border-radius: 0.5rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  transition: all 0.07s;
+}
+.playing {
+  border-color: #fcfdaf;
+  transform: scale(1.1);
+  box-shadow: 0 0 10px #ffc600;
+}
+kbd {
+  font-size: 2.5rem;
+}
+
+span {
+  color: #fcfdaf;
 }
